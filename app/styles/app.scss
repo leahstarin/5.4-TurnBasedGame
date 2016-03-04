@@ -2,6 +2,9 @@
 // Bootstrap Variables
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
+$grid-gutter-width: 15px;
+$container-large-desktop: (980px);
+
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
@@ -14,4 +17,76 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
 img {
   max-width: 100%;
+}
+
+body{
+  background: url('http://www.pageresource.com/wallpapers/wallpaper/animal-cute-cat-and-dog-cuddling-cats-dogs_309803.jpg')
+}
+
+.attack-button{
+  border: solid 2px #FF3399;
+}
+
+.giphy-embed{
+  width: 275px;
+  height: 275px;
+  margin-left: 35px;
+}
+
+.header{
+  text-align: center;
+  background-color: #FFCCCC
+}
+.slider {
+  float: right;
+}
+
+.Kittens {
+  border: 2px solid #FF3399;
+  margin: 50px;
+  height: 450px;
+  width: 350px;
+  display: inline-block;
+  border-radius: 9px;
+  text-align: center;
+  background-color: #FFCCCC;
+
+
+}
+.Puppies {
+  border: 2px solid #FF3399;
+  margin: 50px;
+  height: 450px;
+  width: 350px;
+  display: inline-block;
+  border-radius: 9px;
+  text-align: center;
+  background-color: #FFCCCC;
+}
+
+
+.footer {
+  text-align: center;
+  background-color: #FFCCCC;
+  h3{
+    font-size: 50px;
+  }
+
+}
+
+ h1 {
+ margin-top: 0;
+ margin-bottom: 10px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ font-family: 'Amatic SC', cursive;
+ font-size: 50px;
+}
+
+#bar {
+  background-color: #FF3399;
+}
+
+#bar2 {
+  background-color: #FF3399;
 }
