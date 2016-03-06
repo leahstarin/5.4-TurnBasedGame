@@ -20,52 +20,37 @@
       <h1>Kittens</h1>
 
       <iframe src="//giphy.com/embed/wEjfP2ZDq80OA" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-      <div class="progress">
-        <div id='bar' class="progress-bar progress-bar-striped active" role="progressbar"
-        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-          40%
-        </div>
-      </div>
+
 
       <div class="health">
 
-</div>
-
-
-
-      </div>
+     </div>
+     </div>
 
         <div class="Puppies">
 
           <h1>Puppies</h1>
 
           <iframe src="//giphy.com/embed/QFSD9tGuryBHy" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-          <div class="progress">
-            <div id='bar2' class="progress-bar progress-bar-striped active" role="progressbar"
-            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-              40%
-            </div>
+
+            <h2 class='selectedpuppy'></h2>
+
             <div class="health">
-           <div class="first-player"><button type="button" class="btn btn-default attack-button">Attack</button></div>
 
-          
+              <div class='remainingHealth'></div>
 
-
-          </div>
+            </div>
 
        </div>
-        <div class="slider">
-                                                 <ul class="puppyPlayersList"></ul>
-      <button class="btn1">Slide up</button>
-      <button class="btn2">Slide down</button>
-      </div>
+       </div>
+       <div class="first-player"><button type="button" class="btn btn-default attack-button">Attack</button></div>
 
 
 
+        <select class="puppyPlayersList"></select><button type='button' class='startbutton'>Start</button>
 
-    </div>
 
-  </div>
+</div>
     <div class="footer">
 
       <h3>XOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXO</h3>
@@ -75,7 +60,7 @@
     <script type="text/template" id="puppyPlayers">
 
       {{#each this as |puppy|}}
-        <li>{{puppy.name}}</li>
+        <option val="{{puppy.name}}" class=charactername>{{puppy.name}}</option>
       {{/each}}
     </script>
 

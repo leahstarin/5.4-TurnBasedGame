@@ -23,7 +23,7 @@ function puppyTemplate(data){
 function Player(options){
   options = options || {};
   this.health = options.health || 100;
-
+  this.name = options.name;
 
 }
 Player.prototype.takeDamage = function(){
@@ -31,50 +31,36 @@ Player.prototype.takeDamage = function(){
 }
 
 
-var puppy = new Player({health: 200});
+var puppy;
 
-// console.log(puppy.health);
+var kitten;
 
-var kitten = new Player({
-  health: 100
-});
-
-$('.attack-button').on('click', function(){
+$('.attack-button').on('click', function(e){
+  e.preventDefault();
   puppy.takeDamage();
   kitten.takeDamage();
   $('.Kittens .health').text(kitten.health);
   console.log(kitten.health);
-  $('.Puppies .health').text(puppy.health);
-  console.log(puppy.health);
+  $('.remainingHealth').text(puppy.health);
+  // console.log(puppy.health);
 });
 
-$(".btn1").click(function(){
-   $("ul").slideUp();
-});
-$(".btn2").click(function(){
-   $("ul").slideDown();
-});
 
-var puppyPlayers = [{name: 'Leah'}, {name: 'Hannah'}, {name: 'Jake'}];
+var puppyPlayers = [{name: 'Bonnie'}, {name: 'Rover'}, {name: 'Lola'}];
 puppyTemplate(puppyPlayers);
 
-// playerTemplate({name: 'Leah'})
+$('.startbutton').on('click', function(){
+ var selectedpuppy = $('.puppyPlayersList').val()
+ console.log(selectedpuppy);
+ puppy = new Player({health: 200, name: selectedpuppy});
+ $('.selectedpuppy').append(selectedpuppy);
+
+ var kittyPlayers = [{name: 'Felix'}, {name: 'Oliver'}, {name: 'Callie'}]
+ var player = _.random(0,kittyPlayers.length-1);
+ kitten = new Player({health: 100});
 
 
-
-
-// random generation
-// var puppyPlayers = [{name: 'A'}, {name: 'B'}, {name: 'C'}]
-// console.log(puppyPlayers);
-//
-// var player = _.random(0,puppyPlayers.length-1);
-// console.log(player);
-//
-// console.log(puppyPlayers[player]);
-
-
-
-
+});
 
 // $('.Puppies').text(puppy.health);
 

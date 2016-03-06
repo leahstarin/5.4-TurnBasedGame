@@ -18,13 +18,20 @@ $container-large-desktop: (980px);
 img {
   max-width: 100%;
 }
-
+li{
+  list-style: none;
+}
 body{
-  background: url('http://www.pageresource.com/wallpapers/wallpaper/animal-cute-cat-and-dog-cuddling-cats-dogs_309803.jpg')
+  background: url('http://www.pageresource.com/wallpapers/wallpaper/animal-cute-cat-and-dog-cuddling-cats-dogs_309803.jpg');
+  color: white;
 }
 
 .attack-button{
   border: solid 2px #FF3399;
+  color: #FF3399;
+  float: right;
+  margin-right: 350px;
+
 }
 
 .giphy-embed{
@@ -83,10 +90,23 @@ body{
  font-size: 50px;
 }
 
-#bar {
-  background-color: #FF3399;
+
+.startbutton{
+  border: solid 2px #FF3399;
+  background-color: white;
+  color: #FF3399;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.charactername{
+  cursor: pointer;
 }
 
-#bar2 {
-  background-color: #FF3399;
-}
+
+// #bar {
+//   background-color: #FF3399;
+// }
+//
+// #bar2 {
+//   background-color: #FF3399;
+// }
