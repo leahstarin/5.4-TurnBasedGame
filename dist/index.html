@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>5 4 TurnBasedGame</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Littles at War</h1>
+
+    </div>
+
+    <div class="container">
+
+      <div class="Kittens">
+
+      <h1>Kittens</h1>
+
+      <iframe src="//giphy.com/embed/wEjfP2ZDq80OA" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+
+      <div class="health">
+
+     </div>
+     </div>
+
+        <div class="Puppies">
+
+          <h1>Puppies</h1>
+
+          <iframe src="//giphy.com/embed/QFSD9tGuryBHy" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+            <h2 class='selectedpuppy'></h2>
+
+            <div class="health">
+
+              <div class='remainingHealth'></div>
+
+            </div>
+
+       </div>
+       </div>
+       <div class="first-player"><button type="button" class="btn btn-default attack-button">Attack</button></div>
+
+
+
+        <select class="puppyPlayersList"></select><button type='button' class='startbutton'>Start</button>
+
+
+</div>
+    <div class="footer">
+
+      <h3>XOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXO</h3>
+
+    </div>
+
+    <script type="text/template" id="puppyPlayers">
+
+      {{#each this as |puppy|}}
+        <option val="{{puppy.name}}" class=charactername>{{puppy.name}}</option>
+      {{/each}}
+    </script>
+
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
